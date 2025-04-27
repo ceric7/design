@@ -1,0 +1,578 @@
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,html,label,table,tr,td {margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,a img,:link img,:visited img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {}
+q:before,q:after {content:'';}
+
+/* ------------------------ GLOBAL ELEMENTS ------------------------ */
+
+/* ------------------------ type selectors ------------------------ */
+body { 
+	background:#EAEAEA top repeat-x;
+	text-align:center; 
+	margin: 0 auto;
+}
+
+blockquote { margin-left:10px; margin-right:10px; }
+
+h1	{ font-family: "Ubuntu", sans-serif; font-weight:500; font-size:1.8em; color:#fc5a2b; margin: 10px auto}
+h2	{ font-family: "Ubuntu", sans-serif; font-weight:500; font-size:1.5em; color:#a0391b;}
+h3	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1.2em; color:#270a09; margin: 5px auto; line-height: 1.2em}
+h4	{ font-family: "Roboto", sans-serif; font-weight:300; font-size:1em; color:#606060; margin: 2px auto; line-height: 1.5em}
+h5	{ font-family: "Roboto", sans-serif; font-weight:300; font-size:1em; color:#270a09; }
+h6	{ font-family: "Roboto", sans-serif; font-weight:300; font-size:0.7em; color:#9F9F9F; }
+h7	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1.1em; color:#270a09; }
+
+h1 span,h2 span,h3 span	{ display:none; }
+
+h2 { margin-top: 20px; padding-top: 5px}
+
+
+/* ------------------------ classes ------------------------ */
+.line-separator{
+	height:1px;
+	background:#ACACAC;
+	margin-bottom:10px;
+}
+
+.project-divider{
+	height:30px;
+	margin-bottom:10px;
+}
+
+.clear	{ 
+	clear:both; height: 2em;
+	}
+
+div.clear	{ 
+	height:1em; 
+	overflow:hidden; 
+	}
+
+p.back-to-top {
+	text-align:right;
+	display:block;
+	background:url("") right no-repeat;
+	}
+
+img.img-left { 
+	float:left; 
+	margin:2px 10px 10px 0px;
+	}
+
+img.img-right { 
+	float:right; 
+	margin:5px 0px 10px 10px; 
+	}
+
+/* ------------------------ form elements ------------------------ */
+form {
+	width:150px;
+	margin:10px 0 15px 0; /* set margin left and right below */
+	}
+
+form label	{ font-size:.95em; } 
+
+form br { line-height:0; height:0; } /* defaults vertical spacing between fields */
+
+input, textarea, select { 
+	background-color:#66FFCC !important; /* to prevent highlighting by Google Toolbar */
+	border:1px solid #B4790C;
+	color:#000;
+	width:145px; /* 5 pixles smaller than form width !important */
+	height:18px;
+	line-height:18px;
+	vertical-align: middle;
+	margin-bottom:4px; /* sets vertical spacing between fields */
+	padding-top:1px; /* vertically position text in input/textarea field */
+	padding-left:4px; /* horizontally position text in input/textarea field */
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size:1.0em;
+	}
+
+select { width:150px; padding:0; } /* same width as form - !important */
+
+textarea { height:90px; overflow:auto; }
+
+#contact_business { display: none; } /* do not remove */ 
+
+
+/* ------------------------ SPECIFIC ELEMENTS ------------------------ */
+
+/* ------------------------ main contact form ------------------------ */
+#contact-main { margin:20px 0 10px 0; }
+
+#contact-main label { 
+	width:220px; 
+	position:relative; 
+	display:block; 
+	text-align:right; 
+	margin-bottom:10px;
+	font-size:1.0em;
+	}
+
+#contact-main label input, #contact-main label textarea, #contact-main label select { 
+	width:170px;
+	position:absolute; 
+	left:110%; 
+	top:-2px;
+	}
+
+#contact-main label select { width:175px; } /* fixes display issue - 5px larger than input field */
+
+#contact-main label textarea { height:100px; overflow:auto; }
+
+/* ------------------------ submit button form elements ------------------------ */
+
+input.submit, input.submit-contact-main { 
+	width:60px;
+	height:20px;
+	cursor:pointer; 
+	padding:0; 
+	}
+
+input.submit-contact-main { margin:95px 0 0 243px; } /* defines placement of contact-main submit button */
+
+input.submit-image, input.submit-contact-main { /* REMOVE IF NOT USED */
+	background:url("../images/btn-submit.jpg");
+	width:64px;
+	height:20px;
+	border:none;
+	cursor:pointer;
+	}
+
+/* ------------------------------- CONTENT FRAMEWORK ------------------------------- */
+
+/* ------------------------ main framework ------------------------ */
+#wrap {
+
+	width:900px;
+	margin:0 auto;
+	text-align:left;
+	}
+#wrap2 {
+
+	width:600px;
+	margin:0 auto;
+	text-align:left;
+	}
+/* ------------------------ masthead framework ------------------------ */
+#masthead {
+	position:relative;
+	height:70px;
+	width:900px;
+	margin-top:30px;
+	float:left;
+	}
+	/* index page link within #masthead */	
+	
+#masthead2 {
+	position:relative;
+	height:70px;
+	width:600px;
+	margin-top:30px;
+	float:left;
+	} 
+#masthead h1 {
+	width: 270px;
+	height: 50px;
+	float: left;
+
+}	
+#masthead h5 {
+	margin-top:22px;
+	width:630px;
+	height: 50px;
+	float:right;
+	text-align:right}	
+	
+#masthead2 h5 {
+	margin-top:22px;
+	width:600px;
+	height: 50px;
+	}	
+
+.project-detail-column-full {
+	margin-top:10px;
+	width: 890px;
+	float: left;
+}
+
+.project-detail-column {
+	margin-top:10px;
+	width: 895px;
+	float: left;
+}
+
+.button-column {
+	margin-top:5px;
+	width: 890px;
+	float: left
+}
+
+.button-column a {
+	display: table; 
+	height: 33px; 
+	width: auto; 
+	overflow: hidden; 
+	text-align:center; 
+	
+	background: #d5d5d5; 
+	border-radius: .1em; border-bottom: inset 2px #fc5a2b;
+	margin-bottom: .5em; margin-right: 1.2em;
+	float:left;
+}
+
+.button-column p {
+	display: table-cell; 
+	vertical-align: middle; 
+	padding: 0 20px;
+}
+
+
+/* ------------------------ bottom-wrap framework ------------------------ */
+/* ------------ must have below column-left and column-right to clear the float ------------ */
+#bottom-wrap {
+	background:url("");
+	width:100%; /* fix for Safar */
+	height:20px;
+	clear:both; /* important - do not remove */
+	}
+
+/* ------------------------footer framework ------------------------ */
+#footer {
+	width:900px; height:60px;
+	margin:0 auto;
+	text-align:center;
+	}
+#footer2 {
+	width:600px; height:60px;
+	margin:0 auto;
+	text-align:center;
+	}
+#footer p {
+	color:#009900;
+	margin-bottom:10px;
+	}
+
+#footer a:link, #footer a:visited { color:#009900; }
+#footer a:hover, #footer a:active { color:#000; }
+
+#footer ul {margin:10px;}
+	#footer li { /* if your li's float, you can adjust border height w/ line-height */
+		padding:0 5px 0 7px; /* adjusts the spacing between each li display and border-left */
+		display: inline;
+		border-left: 1px solid #009900;
+		}
+	#footer li.first { border: none; }
+
+/* ------------------------ GLOBAL BUTTON STYLE ------------------------ */
+
+.button-style {
+	display: block;
+	background-color: #C5C5C5;
+	
+	height:35px; width:250px;
+	margin: 0;
+	text-align:center;
+	border-radius: .2em;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	vertical-align:middle;
+}
+
+.button-style p {
+	position: relative;
+	top: 25%;
+	transform: translateY(-50%);	
+}
+/*
+.button-style p img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+ */
+ 
+
+
+.button-column a:link, .button-column a:visited	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1em; color:#270a09; text-decoration:none; outline:none; }
+.button-column a:hover, .button-column a:active	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1em; background:#270a09; color:#fc5a2b; text-decoration:none; outline:none; }
+
+/* ------------------------ BASIC SLIDE RELATED ------------------------ */
+
+.wide {
+	border-bottom: 1px #000 solid;
+	width: 4000px;
+}
+
+.fleft { float: left; margin: 0 20px 0 0; }
+
+.cboth { clear: both; height: 20px }
+.cboth2 { clear: both; height: 40px }
+.cboth3 { clear: both; height: 60px}
+
+#main {
+	background: #fff;
+	margin: 0 auto;
+	padding: 30px;
+	width: 1000px;
+}
+
+
+.stillshot2 {
+	width:500px;
+	border:4px solid #ededed;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:15px;	margin-bottom:40px;
+}
+
+.stillshot1 {
+	width:500px;
+	border:4px solid #ededed;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:15px;	margin-bottom:40px;
+}
+
+.stillshot1:hover {
+	width:500px;
+	border:4px solid #51edff;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:15px;	margin-bottom:40px;
+}
+
+/* player container */
+#player {
+	height:750px;
+	width:500px;
+	border:4px solid #ededed;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:15px;	margin-bottom:40px;
+}
+
+/* player container */
+#player:hover {
+	height:750px;
+	width:500px;
+	border:4px solid #51edff;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:15px;	margin-bottom:40px;
+}
+
+/* play button */
+#player img {
+	margin-top:367px;
+}
+
+/* info area */
+#player div.info {
+	height:31px;
+	background:#000 url("../imgs/grdnBar.png") repeat-x;
+	opacity:1;
+	color:#fff;
+	margin-top:270px;
+	text-align:left;
+	padding:10px 15px;	
+	font-family:"bitstream vera sans","trebuchet ms";
+	font-size:11px;
+	border-top:1px solid #ccc;
+}
+
+/* duration data inside info area */
+#player div.info span {
+	color:#CCC;
+	display:block;
+	font-weight:bold;
+}
+
+.myThumb {
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#666; 
+	font-size:11px; 
+	width:500px;
+	margin-bottom:40px;
+	border:4px solid #ededed;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+}
+
+.myThumb:hover {
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#666; 
+	font-size:11px; 
+	width:500px;
+	margin-bottom:40px;
+	border:4px solid #51edff;
+	-moz-outline-radius:4px;
+	cursor:pointer;
+}
+
+.myLink {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	color: #3bdbff;
+	
+}
+
+.myLink:hover {
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:bold;
+	font-size:12px;
+	color: #ff5400;
+}
+
+.contactLink {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color: #3bdbff;
+	
+}
+
+.contactLink:hover {
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:normal;
+	font-size:14px;
+	color: #ff5400;
+}
+
+.projectDetail {
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#D0D0D0;
+}
+
+.profile {
+	width:500px; 
+
+	line-height:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#D0D0D0;	
+}
+
+#banner-fade1, #banner-fade2, #banner-fade3, #banner-fade4, #banner-fade5,
+#banner-fade6, #banner-fade7, #banner-fade8, #banner-fade9, #banner-fade10,
+#banner-fade11, #banner-fade12, #banner-fade13, #banner-fade14, #banner-fade15,
+
+#banner-slide1, #banner-slide2, #banner-slide3, #banner-slide4, #banner-slide5, 
+#banner-slide6, #banner-slide7, #banner-slide8, #banner-slide9, #banner-slide10,
+#banner-slide11, #banner-slide12, #banner-slide13, #banner-slide14, #banner-slide15{
+	margin-bottom: 60px;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	padding:0px 5px;
+	background: #C5C5C5;
+	color:#fff;
+	margin:4px;
+	text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	padding:2px 5px;
+	background: #fc5a2b;
+}
+
+p.bjqs-caption{
+	background: rgba(0,0,0,0.3);
+}
+
+/* horizontal line */
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 0 auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+/* fancybox required */
+.fancybox-custom .fancybox-skin {
+	box-shadow: 0 0 50px #222;
+}
+
+#contact { padding-top: 10px}
+.contact1 {
+	background:url("../images/icons/email.png") no-repeat left top;
+	width: 328px;
+	height: 80px;
+	float: left;
+}
+.contact1b {
+	background:url("../images/icons/email.png") no-repeat left top;
+	width: 360px;
+	height: 60px;
+	float: left;
+}
+.contact1 h4 { margin-left: 60px; margin-top:12px;}
+.contact1b h4 { margin-left: 60px; margin-top:12px;}
+
+.contact2 {
+	width: 300px;
+	height: 80px;	
+	background:url("../images/icons/phone.png") no-repeat left top;
+	float: left;
+}
+.contact2b {
+	width: 230px;
+	height: 80px;	
+	background:url("../images/icons/phone.png") no-repeat left top;
+	float: left;
+}
+.contact2 h4 { margin-left: 60px; margin-top:12px;}
+.contact2b h4 { margin-left: 60px; margin-top:12px;}
+.contact3 {
+	width: 270px;
+	height: 80px;
+	background:url("../images/icons/linkedin.png") no-repeat left top;
+	float: left;
+}
+.contact3 h4 { margin-left: 60px; margin-top:12px;}
+
+#contact a:link, #contact a:visited	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1em; color:#270a09; text-decoration:none; outline:none; }
+#contact a:hover, #contact a:active	{ font-family: "Roboto", sans-serif; font-weight:400; font-size:1em; background:#270a09; color:#fc5a2b; text-decoration:none; outline:none; }
